@@ -9,7 +9,7 @@
 // @connect      your_domain
 // ==/UserScript==
 
-let list, cells;
+
 // URL to fetch the JSON list
 const listUrl = 'https://raw.githubusercontent.com/fetchhh/Blacklist/main/list.json';
 
@@ -53,8 +53,7 @@ const getPlayerList = () => {
             nocache: true,
             onload: (response) => {
                 if (response.status === 200) {
-                    const data = JSON.parse(response.responseText);
-                    list = data;
+                    const list = JSON.parse(response.responseText);
                     resolve(list);
                 }
             },
@@ -67,7 +66,7 @@ const getPlayerList = () => {
 
 // Process the player list
 getPlayerList()
-    .then(() => {
+    .then((list) => {
 
         const {
             ally_clan,
