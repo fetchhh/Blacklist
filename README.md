@@ -9,7 +9,7 @@ Script to set custom colors depending on whether the player/clan is enemy or all
 ## Installation
 
 1. Make sure you have a userscript manager extension installed. (E.g., Tampermonkey)
-2. Click on [this link](blacklist.user.js).
+2. Click [here](blacklist.user.js).
 3. Follow the installation prompt to add the userscript.
 
 ## Usage
