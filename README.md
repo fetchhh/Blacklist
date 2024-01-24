@@ -22,20 +22,20 @@ To configure the userscript, edit the `listUrl` variable in the script with the 
 ```json
 {
     "enemy_player": [
-        "player_1",
-        "player_2"
+        "Opex-Rah",
+        "CashOut"
     ],
     "enemy_clan": [
-        "clan_1",
-        "clan_2"
+        "bigYT",
+        "JMPER"
     ],
     "ally_player": [
-        "player_1",
-        "player_2"
+        "Opex-Rah",
+        "CashOut"
     ],
     "ally_clan": [
-        "clan_1",
-        "clan_2"
+        "bigYT",
+        "JMPER"
     ]
 }
 ```
