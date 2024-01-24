@@ -17,6 +17,12 @@ Script to set custom colors depending on whether the player/clan is enemy or all
 
 ## Configuration
 
+You can use a website like [Pastebin](https://pastebin.com/) to upload your own list.
+
+Replace the `@connect` tag with the domain where the list is hosted:
+
+`// @connect      pastebin.com`
+
 To configure the userscript, edit the `listUrl` variable in the script with the path to your JSON list. The JSON list should follow this structure:
 
 ```json
@@ -39,6 +45,12 @@ To configure the userscript, edit the `listUrl` variable in the script with the 
     ]
 }
 ```
-Make sure to update the Access-Control-Allow-Origin header on your server to allow requests from the domain where the userscript is running.
+
+If you don't want to load the JSON from an external source then just put it in the `listUrl` variable.
+
+In case you host it on your own server, make sure to update the Access-Control-Allow-Origin header to allow requests from the domain where the userscript is running, you can either set it to `*` to allow all the domains or `https://your-domain.com` to allow one domain:
+
+`Access-Control-Allow-Origin: *`\
+`Access-Control-Allow-Origin: https://tankionline.com`
 
 If you have any more requests or changes, let me know on discord: fetchhh. 
