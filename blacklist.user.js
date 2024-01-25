@@ -34,7 +34,7 @@ const input_enemy = createColorInput('enemy', '85', '#8b0000');
     const storageKey = `${type}Color`;
 
 
-    if (localStorage.getItem('storageKey') !== null) {
+    if (localStorage.getItem(storageKey) !== null) {
         input.value = localStorage.getItem(storageKey);
     }
 
