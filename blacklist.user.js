@@ -123,7 +123,7 @@ getPlayerList()
         // Wait for the presence of the battleList or BattleStats and trigger updatePlayersStatus()
         const waitForSelector = () => {
             document.querySelector('.ProBattlesComponentStyle-table') || document.querySelector('.ProBattlesComponentStyle-scrollBattlePick') ? (input_ally.style.display = input_enemy.style.display = 'block', updatePlayersStatus()) : document.querySelector('.BattleTabStatisticComponentStyle-container') ? updatePlayersStatus() : (input_ally.style.display = input_enemy.style.display = 'none');
-            setTimeout(waitForSelector, 0);
+            requestAnimationFrame(waitForSelector);
         }
 
         // Initial loop
