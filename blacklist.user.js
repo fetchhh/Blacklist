@@ -104,17 +104,17 @@ getPlayerList()
                             }
                         })
                     })
+                }
 
-                    if (player) {
-                        // Update the color depending on whether the player is enemy or ally
-                        [enemy_player, ally_player].map((arr, index) => {
-                            arr.forEach((item) => {
-                                if (item.toLowerCase() == player.toLowerCase()) {
-                                    updateColor(element, index === 0 ? 'enemy' : 'ally');
-                                }
-                            })
+                if (player) {
+                    // Update the color depending on whether the player is enemy or ally
+                    [enemy_player, ally_player].map((arr, index) => {
+                        arr.forEach((item) => {
+                            if (item.toLowerCase() == player.toLowerCase()) {
+                                updateColor(element, index === 0 ? 'enemy' : 'ally');
+                            }
                         })
-                    }
+                    })
                 }
             })
 
