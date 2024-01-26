@@ -98,7 +98,7 @@ getPlayerList()
 
                 if (player) {
                     // Update the color depending on whether the player is enemy or ally
-                    [enemy_player, ally_player].map((arr, index) => {
+                    [ally_player, enemy_player].map((arr, index) => {
                         arr.forEach((item) => {
                             if (item.toLowerCase() == player.toLowerCase()) {
                                 updateColor(element, index === 0 ? 'enemy' : 'ally');
@@ -108,7 +108,7 @@ getPlayerList()
 
                     if (clan) {
                         // Update the color depending on whether the clan is enemy or ally
-                        [enemy_clan, ally_clan].map((array, index) => {
+                        [ally_clan, enemy_clan].map((array, index) => {
                             array.forEach((item) => {
                                 if (item.toLowerCase() == clan.toLowerCase()) {
                                     updateColor(element, index === 0 ? 'enemy' : 'ally');
