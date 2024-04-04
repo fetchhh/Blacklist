@@ -11,7 +11,7 @@
 
 
 // URL to fetch the JSON list
-const listUrl = 'https://raw.githubusercontent.com/fetchhh/blacklist/main/list.json';
+const listUrl = 'https://raw.githubusercontent.com/fetchhh/Blacklist/main/list.json';
 
 // Function to create color input elements
 const createColorInput = (_class, bottom, value) => {
