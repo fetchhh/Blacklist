@@ -52,5 +52,3 @@ In case you host it on your own server, make sure to update the Access-Control-A
 
 `Access-Control-Allow-Origin: *`\
 `Access-Control-Allow-Origin: https://tankionline.com`
-
-If you have any more requests or changes, let me know on discord: fetchhh. 
