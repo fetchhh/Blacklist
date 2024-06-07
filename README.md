@@ -47,8 +47,3 @@ To configure the userscript, edit the `listUrl` variable in the script with the 
 ```
 
 If you don't want to load the JSON from an external source then just put it in the `listUrl` variable.
-
-In case you host it on your own server, make sure to update the Access-Control-Allow-Origin header to allow requests from the domain where the userscript is running, you can either set it to `*` to allow all the domains or `https://your-domain.com` to allow one domain:
-
-`Access-Control-Allow-Origin: *`\
-`Access-Control-Allow-Origin: https://tankionline.com`
